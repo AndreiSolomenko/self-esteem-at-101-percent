@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sasha</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+<div class="header">
+    <div class="header-links">
+        <div style="cursor: pointer;" onclick="scrollToNextdBlock('second-block')">Для кого цей курс</div>
+        <div style="cursor: pointer;" onclick="scrollToNextdBlock('third-block')">Про автора</div>
+        <div style="cursor: pointer;">Відгуки</div>
+        <div style="cursor: pointer;">Програма курсу</div>
+        <div style="cursor: pointer;">Бонуси</div>
+        <div style="cursor: pointer;">Контакти</div>
+    </div>
+</div>
+<div class="dropdown-custom-menu-button" onclick="toggleDropdownMenu()">
+    <div>
+        <div class="dropdown-custom-line"></div>
+        <div class="dropdown-custom-line" style="margin: 0.4rem 0"></div>
+        <div class="dropdown-custom-line"></div>
+    </div>
+
+    <div class="dropdown-custom-menu" id="dropdownMenu">
+        <div style="cursor: pointer;" onclick="scrollToNextdBlock('second-block'); hideDropdownMenu(event)">Для кого цей курс</div>
+        <div style="cursor: pointer; margin-top: 1.5rem;" onclick="scrollToNextdBlock('third-block'); hideDropdownMenu(event)">Про автора</div>
+        <div style="cursor: pointer; margin-top: 1.5rem;">Відгуки</div>
+        <div style="cursor: pointer; margin-top: 1.5rem;">Програма курсу</div>
+        <div style="cursor: pointer; margin-top: 1.5rem;">Бонуси</div>
+        <div style="cursor: pointer; margin-top: 1.5rem;">Контакти</div>
+    </div>
+</div>
+
+<div class="first-block-background">
+    <div class="first-block-circle"></div>
+    <div class="first-block">
+        <div class="first-block-text">
+            <div class="pading-for-text">
+                <div style="display: flex; align-items: center; justify-content: start;">
+                    <div class="first-block-first-text" style="margin-right: 1.5rem;">
+                        З доступом назавжди
+                    </div>
+                    <div class="first-block-first-text">
+                        Матеріали курса на 2х мовах UA/RU
+                    </div>
+                </div>
+                <div class="first-block-second-text">САМООЦІНКА НА 101%</div>
+                <div class="first-block-third-text">Як здобути абсолютну впевненість в собі,</div>
+                <div class="first-block-third-text">прийняти і полюбити себе.</div>
+                <div style="display: flex; align-items: start; justify-content: start; margin-top: 1.5rem">
+                    <div class="first-block-fourth-text">ПРИДБАТИ КУРС</div>
+                    <div style="display: flex; align-items: start; justify-content: space-between;">
+                        <div>
+                            <div class="first-block-fifth-top-text">1200 грн</div>
+                            <div class="first-block-fifth-bottom-text">390 грн</div>
+                        </div>
+                        <div class="first-block-sixth-text">- 72%</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="first-block-photo"></div>
+    </div>
+</div>
+
+
+<div class="second-block" id="second-block">
+    <div class="second-block-circle"></div>
+    <div class="my-container">
+        <div class="second-block-main-text">
+            <div class="main-text-margin" style="z-index: 2">ДЛЯ</div>
+            <div class="main-text-margin" style="z-index: 2">КОГО</div>
+            <div class="main-text-margin" style="color: #B37C90; z-index: 2">ЦЕЙ</div>
+            <div class="main-text-margin" style="z-index: 2">КУРС</div>
+        </div>
+        <div class="second-block-text">Цей курс саме для вас, якщо вас турбують такі питання:</div>
+
+
+        <div class="my-grid-small">
+            <div class="double-line" style="display: flex; justify-content: space-between; margin-top: 0.5rem">
+                <div class="double-line-element">
+                    <div class="second-block-star"></div>
+                    <div style="margin-left: 0.5rem">Будь-які неприємності виводять вас з колії. Ви довго думаєте про
+                        них і не можете зберігати спокій?
+                    </div>
+                </div>
+                <div class="double-line-element">
+                    <div class="second-block-star"></div>
+                    <div style="margin-left: 0.5rem">Ви починаєте щось робити, але зупиняєтесь на півшляху і почитаєте
+                        прокрастинувати. Як змінити це становище?
+                    </div>
+                </div>
+            </div>
+
+            <div class="double-line" style="display: flex; justify-content: space-between; margin-top: 0.5rem">
+                <div class="double-line-element">
+                    <div class="second-block-star"></div>
+                    <div style="margin-left: 0.5rem">Ваше відображення у дзеркалі викликає у вас відразу. Як знайти
+                        спосіб полюбити і прийняти свою зовнішність?
+                    </div>
+                </div>
+                <div class="double-line-element">
+                    <div class="second-block-star"></div>
+                    <div style="margin-left: 0.5rem">Постійно опиняєтесь у токсичних та співзалежних відносинах. Як
+                        нарешті побудуваті здорові стосунки та позбутися ролі жертви?
+                    </div>
+                </div>
+            </div>
+            <div class="double-line" style="display: flex; justify-content: space-between; margin-top: 0.5rem">
+                <div class="double-line-element">
+                    <div class="second-block-star"></div>
+                    <div style="margin-left: 0.5rem">Постійно роздратовуєтесь і виплескуєте гнів на близьких. Як
+                        навчитись екологічно для себе та оточуючих проявляти свій гнів?
+                    </div>
+                </div>
+                <div class="double-line-element">
+                    <div class="second-block-star"></div>
+                    <div style="margin-left: 0.5rem">Постійно перебуваєте в пригніченому стані, в житті немає радості.
+                        Що робити в цій ситуації?
+                    </div>
+                </div>
+            </div>
+            <div class="double-line" style="display: flex; justify-content: space-between; margin-top: 0.5rem">
+                <div class="double-line-element">
+                    <div class="second-block-star"></div>
+                    <div style="margin-left: 0.5rem">Маєте відчуття, що нікому не потрібні та ніхто вас не любить. Що з
+                        цим робити?
+                    </div>
+                </div>
+                <div class="double-line-element">
+                    <div class="second-block-star"></div>
+                    <div style="margin-left: 0.5rem">Вас оточують люди образливі, які постійно скаржаться, що всі їх
+                        ображають і поводяться до них несправедливо. Як не реагувати на це?
+                    </div>
+                </div>
+            </div>
+            <div class="single-line" style="display: flex; justify-content: space-between; margin-top: 0.5rem">
+                <div class="single-line-element">
+                    <div class="second-block-star"></div>
+                    <div style="margin-left: 0.5rem">Не відчуваєте в собі сили щось змінити (особисте життя, кар'єру,
+                        саме життя, в кінці кінців). Де набратися впевненості?
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="my-grid">
+            <div class="first-line" style="display: flex; justify-content: space-between; margin-top: 0.5rem">
+                <div class="first-line-element">
+                    <div class="second-block-star"></div>
+                    <div style="margin-left: 1.1rem">Будь-які неприємності виводять вас з колії. Ви довго думаєте про
+                        них і не можете зберігати спокій?
+                    </div>
+                </div>
+                <div class="first-line-element">
+                    <div class="second-block-star"></div>
+                    <div style="margin-left: 1.1rem">Ви починаєте щось робити, але зупиняєтесь на півшляху і почитаєте
+                        прокрастинувати. Як змінити це становище?
+                    </div>
+                </div>
+                <div class="first-line-element">
+                    <div class="second-block-star"></div>
+                    <div style="margin-left: 1.1rem">Ваше відображення у дзеркалі викликає у вас відразу. Як знайти
+                        спосіб полюбити і прийняти свою зовнішність?
+                    </div>
+                </div>
+            </div>
+            <div class="second-line" style="display: flex; justify-content: space-between; margin-top: 0.5rem">
+                <div class="second-line-element">
+                    <div class="second-block-star"></div>
+                    <div style="margin-left: 1.1rem">Постійно опиняєтесь у токсичних та співзалежних відносинах. Як
+                        нарешті побудуваті здорові стосунки та позбутися ролі жертви?
+                    </div>
+                </div>
+                <div class="second-line-element">
+                    <div class="second-block-star"></div>
+                    <div style="margin-left: 1.1rem">Постійно роздратовуєтесь і виплескуєте гнів на близьких. Як
+                        навчитись екологічно для себе та оточуючих проявляти свій гнів?
+                    </div>
+                </div>
+                <div class="second-line-element">
+                    <div class="second-block-star"></div>
+                    <div style="margin-left: 1.1rem">Постійно перебуваєте в пригніченому стані, в житті немає радості.
+                        Що робити в цій ситуації?
+                    </div>
+                </div>
+                <div class="second-line-element">
+                    <div class="second-block-star"></div>
+                    <div style="margin-left: 1.1rem">Маєте відчуття, що нікому не потрібні та ніхто вас не любить. Що з
+                        цим робити?
+                    </div>
+                </div>
+
+            </div>
+            <div class="third-line" style="display: flex; justify-content: space-between; margin-top: 0.5rem">
+                <div class="third-line-element">
+                    <div class="second-block-star"></div>
+                    <div style="margin-left: 1.1rem; padding-right: 2rem">Вас оточують люди образливі, які постійно
+                        скаржаться, що всі їх ображають і поводяться до них несправедливо. Як не реагувати на це?
+                    </div>
+                </div>
+                <div class="third-line-element">
+                    <div class="second-block-star"></div>
+                    <div style="margin-left: 1.1rem">Не відчуваєте в собі сили щось змінити (особисте життя, кар'єру,
+                        саме життя, в кінці кінців). Де набратися впевненості?
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<div class="third-block" id="third-block">
+    <div class="third-block-paint"></div>
+    <div class="my-container">
+        <div class="second-block-main-text">
+            <div class="main-text-margin" style="z-index: 2">ПРО</div>
+            <div class="main-text-margin" style="color: #B37C90; z-index: 2">АВТОРА</div>
+        </div>
+        <div class="info-block">
+            <div class="third-block-photo"></div>
+            <div class="info-text-block">
+                <div class="info-text">Привіт! Я - Оксана Бутенко, психолог із понад
+                    15-річним досвідом. Моя місія – допомогти вам розібратися в тому, що вас не влаштовує у житті та
+                    побачити те, що ви можете змінити. Ви станете своїм власним психологом.
+                </div>
+                <div class="info-text-and-photo">
+                    <div class="third-block-photo-small"></div>
+                    <div class="info-text">Надаю психологічну підтримку та допомагаю
+                        розібратися, як: зайнятися улюбленою справою та відкрити свій бізнес, прийняти та полюбити себе,
+                        подолати невпевненість та страхи, усвідомити та вийти із співзалежності, опрацювати травму,
+                        вибудувати повноцінні та щасливі стосунки.
+                    </div>
+                </div>
+                <div class="info-text-bold ">Давайте разом зробимо ваше життя психологічно
+                    комфортним!
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<script>
+    function toggleDropdownMenu() {
+        var dropdownMenu = document.getElementById("dropdownMenu");
+        if (dropdownMenu.style.display === "block") {
+            dropdownMenu.style.display = "none";
+        } else {
+            dropdownMenu.style.display = "block";
+        }
+    }
+
+    function scrollToNextdBlock(value) {
+        const nextBlock = document.getElementById(value);
+        const offsetTop = nextBlock.offsetTop - 4 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+
+        window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+        });
+    }
+
+    function hideDropdownMenu(event) {
+        document.getElementById("dropdownMenu").style.display = "none";
+        event.stopPropagation();
+    }
+
+    document.querySelectorAll('[onclick="scrollToNextdBlock(\'second-block\')"], [onclick="scrollToNextdBlock(\'third-block\')"]').forEach(function(element) {
+        element.addEventListener('click', function() {
+            document.getElementById("dropdownMenu").style.display = "none";
+        });
+    });
+
+</script>
+</body>
+</html>
