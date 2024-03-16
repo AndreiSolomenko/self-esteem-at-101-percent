@@ -9,7 +9,11 @@ COPY index.html .
 COPY app.css .
 
 # Copy images
-COPY images/* ./images/
+COPY *.jpg .
+COPY *.jpeg .
+COPY *.png .
+COPY *.gif .
+# Add more file extensions if necessary
 
 # Expose port
 EXPOSE 80
