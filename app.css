@@ -56,12 +56,17 @@ body {
 
 
 
+.horizontal-scroll-wrapper {
+    overflow-x: hidden;
+    width: 100%; /* or set a specific width */
+}
+
+
 /*.my-grid {*/
 /*    display: grid;*/
 /*    grid-template: auto / repeat(4, 25%);*/
 /*    grid-gap: 0.3rem;*/
 /*}*/
-
 
 
 /*.line-element {*/
@@ -72,17 +77,6 @@ body {
 /*    color: #FFFFFF;*/
 /*    z-index: 2;*/
 /*}*/
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media screen and (max-width: 992px) {
@@ -110,7 +104,7 @@ body {
 
     .first-block {
         width: 100%;
-        margin: 0 auto;
+        margin-bottom: 4rem;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -188,7 +182,7 @@ body {
 
     .second-block {
         position: relative;
-        margin-bottom: 2.7rem;
+        margin-bottom: 4rem;
     }
 
     .second-block-circle {
@@ -197,7 +191,7 @@ body {
         position: absolute;
         width: 8rem;
         height: 13rem;
-        top: 0;
+        top: -4rem;
         right: 0;
         z-index: 0;
     }
@@ -212,7 +206,6 @@ body {
         justify-content: start;
         font-size: 2rem;
         font-weight: bold;
-        padding-top: 2.8rem;
     }
 
     .main-text-margin {
@@ -250,6 +243,11 @@ body {
         z-index: 5;
     }
 
+
+    .third-block {
+        margin-bottom: 4rem;
+    }
+
     .single-line-element {
         width: 100%;
         font-size: 0.7rem;
@@ -262,19 +260,44 @@ body {
     }
 
 
+    .third-block-main-text {
+        display: flex;
+        justify-content: start;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
 
 
     .info-text-and-photo {
         display: flex;
+        /*justify-content: space-between;*/
     }
 
     .third-block-photo-small {
         background-image: url(third-block-photo.png);
         background-size: cover;
-        width: 50rem;
-        height: 30rem;
+        width: 10rem;
+        height: 16.5rem;
         z-index: 2;
         border-radius: 2rem;
+    }
+
+    .info-text-first {
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+    .info-text-second {
+        width: 50%;
+        font-size: 0.85rem;
+        margin-left: 0.5rem;
+    }
+
+    .info-text-bold {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 0.5rem;
+        margin-left: 2rem;
     }
 
 
@@ -466,7 +489,51 @@ body {
         color: #FFFFFF;
     }
 
+    .third-block {
+        position: relative;
+        padding-bottom: 8rem;
+    }
 
+    .info-block {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .third-block-main-text {
+        display: flex;
+        justify-content: start;
+        font-size: 3rem;
+        font-weight: bold
+    }
+
+    .third-block-photo {
+        background-image: url(third-block-photo.png);
+        background-size: cover;
+        width: 25.5rem;
+        height: 38rem;
+        z-index: 2;
+        border-radius: 2rem;
+    }
+
+    .info-text-block {
+        margin-left: 1rem;
+        width: 60%
+    }
+
+    .info-text-first {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem
+    }
+    .info-text-second {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem
+    }
+
+    .info-text-bold {
+        font-size: 1.6rem;
+        font-weight: bold
+    }
 
 }
 
@@ -667,8 +734,6 @@ body {
     }
 
 
-
-
     .third-block {
         position: relative;
         padding-bottom: 8rem;
@@ -678,6 +743,13 @@ body {
         margin-top: 1rem;
         display: flex;
         justify-content: space-between;
+    }
+
+    .third-block-main-text {
+        display: flex;
+        justify-content: start;
+        font-size: 3rem;
+        font-weight: bold
     }
 
     .third-block-photo {
@@ -702,8 +774,67 @@ body {
     }
 
 
+    .comment-block {
+        position: relative;
+    }
+
+    .comment-block-circle {
+        background-image: url(comment-block-circle.png);
+        background-size: cover;
+        position: absolute;
+        width: 25rem;
+        height: 36rem;
+        bottom: -9rem;
+        left: 0;
+        z-index: 0;
+    }
+
+    .comment-block-main-text {
+        font-size: 3rem;
+        font-weight: bold
+    }
+
+    .comment-block-card {
+        display: inline-block;
+        margin-top: 2rem;
+        background-image: url(comment-block-card.png);
+        background-size: cover;
+        width: 50rem;
+        height: 28.5rem;
+        z-index: 2;
+        margin-left: 1.5rem;
+    }
+
+    .card-text {
+        margin: 3.5rem auto;
+        width: 73%;
+        font-size: 1.55rem;
+    }
+
+
+    .comment-block-main-text {
+        font-size: 3rem;
+        font-weight: bold;
+        z-index: 2;
+        position: relative;
+    }
+
+
+
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -712,10 +843,16 @@ body {
         margin-left: 1rem;
         width: 63%
     }
-    .info-text {
+
+    .info-text-first {
         font-size: 1.8rem;
         margin-bottom: 2rem
     }
+    .info-text-second {
+        font-size: 1.8rem;
+        margin-bottom: 2rem
+    }
+
     .info-text-bold {
         font-size: 2rem;
         font-weight: bold
@@ -728,7 +865,11 @@ body {
         width: 61%
     }
 
-    .info-text {
+    .info-text-first {
+        font-size: 1.7rem;
+        margin-bottom: 1.7rem
+    }
+    .info-text-second {
         font-size: 1.7rem;
         margin-bottom: 1.7rem
     }
@@ -739,18 +880,24 @@ body {
     }
 }
 
-    @media screen and (min-width: 1501px) and (max-width: 1700px) {
-        .info-text-block {
-            margin-left: 1rem;
-            width: 59%
-        }
-        .info-text {
-            font-size: 1.6rem;
-            margin-bottom: 1.5rem
-        }
-        .info-text-bold {
-            font-size: 1.8rem;
-            font-weight: bold
-        }
+@media screen and (min-width: 1501px) and (max-width: 1700px) {
+    .info-text-block {
+        margin-left: 1rem;
+        width: 59%
+    }
+
+    .info-text-first {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem
+    }
+    .info-text-second {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem
+    }
+
+    .info-text-bold {
+        font-size: 1.8rem;
+        font-weight: bold
+    }
 
 }

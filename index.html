@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Self esteem at 101 percent</title>
-    <link rel="icon" href="second-block-star.png" />
+    <link rel="icon" href="second-block-star.png"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="app.css">
 </head>
@@ -15,7 +15,7 @@
     <div class="header-links">
         <div style="cursor: pointer;" onclick="scrollToNextdBlock('second-block')">Для кого цей курс</div>
         <div style="cursor: pointer;" onclick="scrollToNextdBlock('third-block')">Про автора</div>
-        <div style="cursor: pointer;">Відгуки</div>
+        <div style="cursor: pointer;" onclick="scrollToNextdBlock('comment-block')">Відгуки</div>
         <div style="cursor: pointer;">Програма курсу</div>
         <div style="cursor: pointer;">Бонуси</div>
         <div style="cursor: pointer;">Контакти</div>
@@ -29,9 +29,14 @@
     </div>
 
     <div class="dropdown-custom-menu" id="dropdownMenu">
-        <div style="cursor: pointer;" onclick="scrollToNextdBlock('second-block'); hideDropdownMenu(event)">Для кого цей курс</div>
-        <div style="cursor: pointer; margin-top: 1.5rem;" onclick="scrollToNextdBlock('third-block'); hideDropdownMenu(event)">Про автора</div>
-        <div style="cursor: pointer; margin-top: 1.5rem;">Відгуки</div>
+        <div style="cursor: pointer;" onclick="scrollToNextdBlock('second-block'); hideDropdownMenu(evt)">Для кого цей
+            курс
+        </div>
+        <div style="cursor: pointer; margin-top: 1.5rem;"
+             onclick="scrollToNextdBlock('third-block'); hideDropdownMenu(evt)">Про автора
+        </div>
+        <div style="cursor: pointer; margin-top: 1.5rem;"
+             onclick="scrollToNextdBlock('comment-block'); hideDropdownMenu(evt)">Відгуки</div>
         <div style="cursor: pointer; margin-top: 1.5rem;">Програма курсу</div>
         <div style="cursor: pointer; margin-top: 1.5rem;">Бонуси</div>
         <div style="cursor: pointer; margin-top: 1.5rem;">Контакти</div>
@@ -226,20 +231,20 @@
 <div class="third-block" id="third-block">
     <div class="third-block-paint"></div>
     <div class="my-container">
-        <div class="second-block-main-text">
+        <div class="third-block-main-text">
             <div class="main-text-margin" style="z-index: 2">ПРО</div>
             <div class="main-text-margin" style="color: #B37C90; z-index: 2">АВТОРА</div>
         </div>
         <div class="info-block">
             <div class="third-block-photo"></div>
             <div class="info-text-block">
-                <div class="info-text">Привіт! Я - Оксана Бутенко, психолог із понад
+                <div class="info-text-first">Привіт! Я - Оксана Бутенко, психолог із понад
                     15-річним досвідом. Моя місія – допомогти вам розібратися в тому, що вас не влаштовує у житті та
                     побачити те, що ви можете змінити. Ви станете своїм власним психологом.
                 </div>
                 <div class="info-text-and-photo">
                     <div class="third-block-photo-small"></div>
-                    <div class="info-text">Надаю психологічну підтримку та допомагаю
+                    <div class="info-text-second">Надаю психологічну підтримку та допомагаю
                         розібратися, як: зайнятися улюбленою справою та відкрити свій бізнес, прийняти та полюбити себе,
                         подолати невпевненість та страхи, усвідомити та вийти із співзалежності, опрацювати травму,
                         вибудувати повноцінні та щасливі стосунки.
@@ -253,6 +258,57 @@
     </div>
 
 
+</div>
+
+
+<div class="comment-block" id="comment-block">
+    <div class="comment-block-circle"></div>
+    <div class="my-container">
+        <div class="comment-block-main-text">
+            <div style="z-index: 2">ВІДГУКИ</div>
+        </div>
+        <div class="horizontal-scroll-wrapper">
+            <div style="display: flex; width: 160rem">
+                <div class="comment-block-card">
+                    <div class="card-text">Щиро вдячна Оксані за цей чудовий курс.
+                        Як мати та жінка, я завжди ставила потреби інших на перше місце, а свої - на друге.
+                        Курс допоміг мені змінити цей підхід та навчити любити і дбати про себе.
+                        Тепер я відчуваю себе щасливою та більш збалансованою жінкою.
+                    </div>
+                </div>
+                <div class="comment-block-card">
+                    <div class="card-text">Дівчата, хочу трохи поділитися з вами. Після курсу самооцінки,
+                        мені стало легше жити і дихати. Я трохи більше півроку живу у стані спокою.
+                        Це коли ти ні в чому не винна, і коли ти не відчуваєш образи і тобі нізащо не соромно...
+                        Ох, який же це кайф! Я люблю себе та ціную себе так, як ніколи не цінувала! Дякую вам, Оксано
+                    </div>
+                </div>
+                <div class="comment-block-card">
+                    <div class="card-text">Щиро вдячна Оксані за цей чудовий курс.
+                        Як мати та жінка, я завжди ставила потреби інших на перше місце, а свої - на друге.
+                        Курс допоміг мені змінити цей підхід та навчити любити і дбати про себе.
+                        Тепер я відчуваю себе щасливою та більш збалансованою жінкою.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="horizontal-scrolls" style="display: flex; margin-bottom: 3rem">
+            <div id="scrollLeft" style="font-size: 4rem; z-index: 3; margin-right: 3rem; cursor: pointer; color: #B37C90;">&lt;</div>
+            <div id="scrollRight" style="font-size: 4rem; z-index: 3; cursor: pointer; color: #B37C90;">&gt;</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="program-block">
+    <div class="my-container">
+        <div class="comment-block-main-text">
+            <div style="z-index: 2">ПРОГРАМА КУРСУ</div>
+            <div style="height: 10rem"></div>
+        </div>
+    </div>
 </div>
 
 
@@ -276,15 +332,30 @@
         });
     }
 
-    function hideDropdownMenu(event) {
+    function hideDropdownMenu(evt) {
         document.getElementById("dropdownMenu").style.display = "none";
-        event.stopPropagation();
+        evt.stopPropagation();
     }
 
-    document.querySelectorAll('[onclick="scrollToNextdBlock(\'second-block\')"], [onclick="scrollToNextdBlock(\'third-block\')"]').forEach(function(element) {
-        element.addEventListener('click', function() {
+    document.querySelectorAll('[onclick="scrollToNextdBlock(\'second-block\')"], ' +
+                              '[onclick="scrollToNextdBlock(\'third-block\')"], ' +
+                              '[onclick="scrollToNextdBlock(\'comment-block\')"]').forEach(function (element) {
+        element.addEventListener('click', function () {
             document.getElementById("dropdownMenu").style.display = "none";
         });
+    });
+
+
+    const scrollLeft = document.getElementById('scrollLeft');
+    const scrollRight = document.getElementById('scrollRight');
+    const scrollWrapper = document.querySelector('.horizontal-scroll-wrapper');
+
+    scrollLeft.addEventListener('click', function() {
+        scrollWrapper.scrollBy({ left: -680, behavior: 'smooth' }); // Adjust scroll amount as needed
+    });
+
+    scrollRight.addEventListener('click', function() {
+        scrollWrapper.scrollBy({ left: 680, behavior: 'smooth' }); // Adjust scroll amount as needed
     });
 
 </script>
